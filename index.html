@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link href="fonts/fonts.css" rel="stylesheet">
     <link href="styles/global.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a href="#" class="header__link header__link_active">Главная</a>
+          <li class="header__links-list-item_no-bullit">
+            <a href="#">Главная</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#" class="header__link">Посмотреть лоты</a>
+            <a href="#">Посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#" class="header__link">Об аукционе</a>
+            <a href="#">Об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -28,18 +28,24 @@
         <img src="images/logo-black.svg" class="header__logo-image" alt="Чёрный логотип сайта">
       </a>
       <address class="header__address">
-        <a href="tel:+70000000">+7(000)000-00-00</a><br>
-        <a href="mailto:mail@example.com">mail@example.com</a><br>
-        наб. Принсенграхт 263-265, Амстердам
+        <ul>
+          <li class="header__address-item">
+            <a href="tel:+70000000">+7(000)000-00-00</a>
+          </li>
+          <li class="header__address-item">
+            <a href="mailto:mail@example.com">mail@example.com</a>
+          </li>
+          <li class="header__address-item">наб. Принсенграхт 263-<br> 265, Амстердам</li>
+        </ul>
       </address>
     </header>
     <main>
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="aligned-text aligned-text_left letter-spacing-extended">О<span class="no-letter-spacing">но</span></span> 
-          <span class="aligned-text aligned-text_center letter-spacing-extended">теб<span class="no-letter-spacing">е</span></span> 
-          <span class="aligned-text aligned-text_right letter-spacing-extended">над<span class="no-letter-spacing">о</span></span>
+          <span class="aligned-text-left">Оно</span> 
+          <span class="aligned-text-center">тебе</span> 
+          <span class="aligned-text-right">надо</span>
         </h1>
         <div class="cover__description">
           <p class="cover__description-text">
@@ -108,24 +114,24 @@
         <a href="#" class="lots__look-more-link">Посмотреть больше</a>
       </section>
       <section class="about">
-        <div class="about__column">
+        <div class="about__column-left">
           <div class="about__logo">
             <img src="images/logo-white.svg" class="about__logo-image" alt="Белый логотип сайта">
           </div>
         </div>
-        <div class="about__column">
+        <div class="about__column-right">
           <h2 class="about__title">
             Об аукционе
           </h2>
-          <div class="about__text">
-            <p>
+          <div class="about__description-block">
+            <p class="about__text">
             Здесь вы не встретите очередное пафосное собрание невероятно 
             дорогого антиквариата. Наши лоты вообще не должны были попасть 
             ни на один аукцион. Потому что кому нужен дневник девочки-подростка 
             или картина, которую может нарисовать даже ребёнок? Кому нужны 
             все эти странные вещи, созданные любителями?
             </p>
-            <p>
+            <p class="about__text">
               Слишком сложные или, наоборот, слишком простые. Опережающие своё время. 
               В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то 
               они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту 
@@ -139,14 +145,20 @@
     </main>
     <footer class="footer">
       <address class="footer__address">
-        <a href="tel:+70000000">+7(000)000-00-00</a><br>
-        <a href="mailto:mail@example.com">mail@example.com</a><br>
-        наб. Принсенграхт 263-265, Амстердам
+        <ul>
+          <li class="footer__address-item">
+            <a href="tel:+70000000">+7(000)000-00-00</a>
+          </li>
+          <li class="footer__address-item">
+            <a href="mailto:mail@example.com">mail@example.com</a>
+          </li>
+          <li class="footer__address-item">наб. Принсенграхт 263-<br> 265, Амстердам</li>
+        </ul>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a href="#" class="footer__menu-link footer__menu-link_active">
+            <a href="#" class="footer__menu-link">
               Главная
             </a>
           </li>
