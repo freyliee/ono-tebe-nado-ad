@@ -11,15 +11,9 @@ a {
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
+    height: 293px;
     align-items: center;
-    padding: 95px 50px 100px 50px;
     font-size: 18px;
-}
-
-.header__logo {
-    display: block;
-    justify-self: center;
-    align-self: center;
 }
 
 .header__logo-image {
@@ -32,15 +26,21 @@ a {
     gap: 31px;
     list-style: circle;
     text-transform: lowercase;
+    margin-left: 50px;
 }
 
 .header__links-list-item_no-bullit {
     list-style: none;
 }
 
+.header__link_active {
+    text-decoration: none;
+}
+
 .header__address {
-    max-width: 240px;
+    width: 240px;
     justify-self: end;
+    margin-right: 50px;
 }
 
 .header__address-item:not(:last-child) {
@@ -95,6 +95,7 @@ a {
 
 .aligned-text-center {
     align-self: center;
+    margin-right: -0.3em;
 }
 
 .aligned-text-right {
@@ -259,6 +260,10 @@ a {
     gap: 24px;
 }
 
+.about__description-block p:first-child {
+    width: 688px;
+}
+
 .about__text {
     font-size: 20px;
     font-weight: 400;
@@ -292,6 +297,10 @@ a {
     flex-direction: column;
     align-items: center;
     list-style: none;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
 }
 
 .footer__address-item:not(:last-child) {
